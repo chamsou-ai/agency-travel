@@ -1,0 +1,46 @@
+/* src/HomePage.css */
+
+/* Navbar.css */
+
+.navbar {
+  background-color: #fff; /* Change background color as needed */
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: #333; /* Change text color as needed */
+  margin-right: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #5ea48c; /* Change hover color as needed */
+}
+
+body {
+  --sb-track-color: #ffffff;
+  --sb-thumb-color: #363f73;
+  --sb-size: 10px;
+
+  scrollbar-color: var(--sb-thumb-color) 
+                   var(--sb-track-color);
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size) 
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 1px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 1px;
+  
+  }

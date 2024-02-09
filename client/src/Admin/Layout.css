@@ -1,0 +1,32 @@
+.for-all{
+  display: flex;
+}
+@media (max-width: 768px) {
+  .for-all {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Change flex direction for better centering */
+    align-items: center;
+  }
+}
+.links-toggle {
+  background: none;
+  border: none;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 1;
+  cursor: pointer;
+  color: #fff;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.links-toggle:hover {
+  color: #a8dadc; /* Change color on hover */
+}
+
+/* Hide the links when links-visible class is not present */
+.main-content:not(.links-visible) #sidebar .list-unstyled li {
+  display: none;
+}

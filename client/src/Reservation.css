@@ -1,0 +1,133 @@
+/* Reservation.css */
+
+.reservation-container {
+  background-image: url('./Images/11.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* Change to a column layout */
+  justify-content: center;
+  align-items: center;
+}
+
+.reservation-form {
+  background-color: rgba(110, 207, 185, 0.8); /* Add a semi-transparent white background to the form */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+  color: rgb(5, 26, 83);
+}
+
+.reservation-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(5, 26, 83);
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+.btn-primary {
+  width: 100%;
+  font-weight: 600;
+}
+.btn-warning {
+  font-weight: 600;
+  width: 100%;
+}
+
+.success-message {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: bounce 3s infinite;
+}
+
+.success-message h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.success-message p {
+  font-size: 18px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column; /* Stack the button under the success message */
+  align-items: center; /* Center the button horizontally */
+  margin-top: 20px; /* Add some space between the message and the button */
+}
+
+/* Style for the "Back Home" button */
+.btn-back-home {
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%; /* Make the button span the full width of the container */
+  max-width: 200px; /* Add a maximum width to prevent the button from stretching too wide */
+  text-align: center; /* Center the button's text */
+  margin-top: 20px; /* Add space between the message and the button */
+}
+
+.btn-back-home:hover {
+  background-color: #f57c00;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0); /* Initial and final positions (no translation) */
+  }
+  50% {
+    transform: translateY(-20px); /* Bounce up */
+  }
+}
+@media (max-width: 768px) {
+  .reservation-form {
+    width: 90%;
+  }
+  /* .success-message h2 {
+    font-size: 21px;
+  }
+  
+  .success-message p {
+    font-size: 15px;
+  } */
+  .success-message{
+    padding: 14px;
+    width:90%;
+  }
+}
+@media (max-width: 480px) {
+  .reservation-form {
+    width: 90%;
+  }
+  /* .success-message h2 {
+    font-size: 21px;
+  }
+  
+  .success-message p {
+    font-size: 15px;
+  }
+  .success-message{
+    padding: 14px;
+  } */
+}

@@ -1,0 +1,89 @@
+/* ReservationCard.css */
+
+/* Card container */
+body{
+background: #010101;
+background: linear-gradient(135deg, #010101, #072C7A);
+background-repeat: no-repeat;
+background-attachment: fixed; /* This keeps the background fixed in place */
+background-size: cover;
+}
+.reservation-card {
+  background-color: #1a233259; /* Dark background color */
+
+  color: #fff; /* White text color */
+  border: 0.1px solid #ffffff56; /* Border color */
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: margin 0.4s;
+}
+
+.reservation-card:hover {
+  margin-top: 10px;
+}
+
+/* Card content */
+.card-content {
+  padding: 20px;
+  
+}
+
+/* Full Name styling */
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: inline-block;
+  color:#fceeb0;
+  margin-right: 6px;
+}
+
+/* Other information styling */
+.card-text {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 15px;
+  
+}
+
+/* Done button styling */
+/* Done button styling */
+.done-button {
+  background-color: #9fef00;
+  color: #1c283c;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s; /* Add color transition */
+  font-weight: 500;
+  width: 100%;
+}
+
+.done-button:hover {
+  background-color: #7cc431;
+}
+.main-content {
+  margin-left: 150px; /* Adjust this value to match your sidebar's width */
+  width: 85%;
+}
+@media (max-width: 768px) {
+  .main-content {
+    margin-left:0px !important; /* Remove margin for full-width content */
+  }
+}
+.reservation-card {
+  padding: 10px;
+  width: 100%;
+}
+.sidebar-closed .reservation-card {
+  display: none;
+}
+
+.sidebar-closed .main-content {
+  margin-left: 0; /* Adjust the margin when the sidebar is closed */
+}

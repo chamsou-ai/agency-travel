@@ -1,0 +1,62 @@
+/* Style the login container */
+.account-pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the login card */
+.card {
+  background-color: #1a2332;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the welcome message */
+.bg-login {
+  background-image: url('../Images/1.jpg');
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Style the logo */
+.logo img {
+  height: 45px;
+}
+
+/* Style form elements */
+.form-horizontal .form-group {
+  margin-bottom: 12px;
+}
+
+.form-label {
+  font-size: 13px;
+  color: #fff;
+}
+
+.custom-form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #1e283a;
+  background-color: #0e1827;
+  color: #b0bbd4;
+  border-radius: 0.25rem;
+  outline: none;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+/* Style the login button */
+.btn-success {
+  background-color: #9fef00;
+  color: #1a2332;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 500;
+}
+.btn-success:hover{
+  background-color: #85c604;
+
+}
+
