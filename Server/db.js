@@ -1,11 +1,6 @@
-const mysql = require('mysql2');
-require('dotenv').config(); // Load environment variables from .env file
-
-const pool = mysql.createPool({
-  host: process.env.DB_HOST || 'localhost',
-  user: process.env.DB_USER || 'root',
-  password: process.env.DB_PASSWORD || '',
-  database: process.env.DB_DATABASE || 'age',
-});
+const mysql = require("mysql2");
+require("dotenv").config(); // Load environment variables from .env file
+const urlDB = `mysql://root:a12BGbgDd-fABA1-2eeaAdfB51CHg3Fb@roundhouse.proxy.rlwy.net:15581/railway`;
+const pool = mysql.createPool(urlDB);
 
 module.exports = pool;
