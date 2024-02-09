@@ -11,7 +11,11 @@ const port = process.env.PORT || 3001;
 app.use(express.json());
 app.use(cookieParser());
 app.use(
-  cors()
+  cors({
+    origin: [`${process.env.ORIGIN}`],
+    methods: ["POST", "GET", "PUT"],
+    credentials: true,
+  })
 );
 // Handle POST requests for saving reservations
 app.post("/submit-reservation", (req, res) => {
